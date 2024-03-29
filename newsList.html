@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html class="text-[8px] md:text-[12px] 2xl:text-[16px]" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="lf 企业站 电商 sass" />
+    <title>企业站-新闻列表</title>
+    <link rel="stylesheet" href="style/index.css" />
+    <link rel="stylesheet" href="style/animate.css" />
+    <link rel="icon" sizes="any" mask="" href="./asset/catico.ico" />
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/axios/dist/axios.min.js"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body>
+    <div class="pt-[8.25rem] md:pt-0 bg-white" id="app">
+      <div class="page-head">
+        <div
+          class="head-navBar h-[8.25rem] md:h-[5vw] w-full bg-[#000] flex flex-row fixed md:relative top-0 left-0 z-[99] items-center text-white"
+        >
+          <img
+            class="ml-[2rem] aspect-square w-[6vw] md:w-[3rem] h-[auto]"
+            src="./asset/logo.png"
+            alt=""
+          />
+          <a
+            class="pl-[1rem] text-3xl md:text-xl cursor-pointer"
+            href="./index.html"
+            >企业站</a
+          >
+          <span class="flex-1"></span>
+          <div class="hidden md:block w-[30%] mr-[5rem] relative">
+            <div class="w-full flex flex-row text-center text-base">
+              <a class="flex-1 narbar-item" href="./index.html">首页</a>
+              <a
+                class="flex-1 narbar-item narbar-item-active"
+                href="./newsList.html"
+                >新闻列表</a
+              >
+              <a class="flex-1 narbar-item" href="./aboutUs.html">关于我们</a>
+            </div>
+            <!-- <div>
+              <div class="red-underline bg-[red] w-[1.5rem] h-[2px]"></div>
+            </div> -->
+          </div>
+          <img
+            src="./asset/more.png"
+            class="md:hidden w-[2.4rem] aspect-square mr-[2rem]"
+            id="navbar-more"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="page-body">
+        <!-- 新闻动态 -->
+        <div class="body-news overflow-hidden pb-5">
+          <div class="title">
+            <div class="title-bg text-center mt-20">
+              <img
+                src="./asset/newslist.png"
+                class="w-[60%] md:m-auto pl-[6vw] md:pl-[13rem]"
+                alt=""
+              />
+            </div>
+            <div
+              class="title-content mt-[-2rem] mb-[1rem] flex flex-col items-center"
+            >
+              <p class="text-5xl">新闻列表页</p>
+              <span class="h-[0.5rem] w-[7.5rem] bg-[#FF350D] mt-[2rem]"></span>
+            </div>
+          </div>
+          <div
+            class="news-node flex flex-row flex-wrap w-full p-[4.4vw] md:px-[6vw] md:py-[2vw] md:gap-[3vw] justify-between"
+          >
+            <div
+              class="basis-[calc(50vw-6.6vw)] md:basis-[calc(25vw-6.6vw)] h-[152vw] md:h-[40vw]"
+            >
+              <div
+                class="node-bg h-[70vw] md:h-[26vw] w-full"
+                style="background-image: url('./netAsset/news1.png')"
+              ></div>
+              <p class="text-3xl md:text-xl weight-600 leading-[3rem] mt-10 p1">
+                2022百度AI大会前夕，解读百度大脑的半年“豹变”
+              </p>
+              <p class="mt-8 leading-[3rem] text-3xl md:text-sm p2">
+                Facebook为未来的VR社交打造了一款逼真的虚拟头像系统，该系统的特点是，利用数百颗摄像头对人脸进行动作捕捉，并能生成与人脸相似度很高的虚拟头像，这些头像还能模仿人脸的大量表情。
+              </p>
+            </div>
+
+            <div
+              class="basis-[calc(50vw-6.6vw)] md:basis-[calc(25vw-6.6vw)] h-[152vw] md:h-[40vw]"
+            >
+              <div
+                class="node-bg h-[70vw] md:h-[26vw] w-full"
+                style="background-image: url('./netAsset/news2.jpg')"
+              ></div>
+              <p class="text-3xl md:text-xl weight-600 leading-[3rem] mt-10 p1">
+                创投早报｜美国商业化核聚变创企获投；音乐版权公司完成融资
+              </p>
+              <p class="mt-8 leading-[3rem] text-3xl md:text-sm p2">
+                举办第六届中华印制大奖颁奖典礼、亚洲印刷展览联盟会议、国家主题日等多场专业、先进、丰富的同期活动，全面把握产业趋势与动态，共同探讨印刷业现状和未来。
+              </p>
+            </div>
+            <div
+              class="basis-[calc(50vw-6.6vw)] md:basis-[calc(25vw-6.6vw)] h-[152vw] md:h-[40vw]"
+            >
+              <div
+                class="node-bg h-[70vw] md:h-[26vw] w-full"
+                style="background-image: url('./netAsset/news3.jpg')"
+              ></div>
+              <p class="text-3xl md:text-xl weight-600 leading-[3rem] mt-10 p1">
+                【千龙网】广告行业标准指导性意见将出台
+              </p>
+              <p class="mt-8 leading-[3rem] text-3xl md:text-sm p2">
+                国际印刷工业发展论坛由中国印刷及设备器材工业协会主办，始创于2005年，四年一届，已成功举办三届，每届论坛选择5-6个发达国家和5-6个发展中国家印刷协会的主席或总裁发表演讲
+              </p>
+            </div>
+
+            <div
+              class="basis-[calc(50vw-6.6vw)] md:basis-[calc(25vw-6.6vw)] h-[152vw] md:h-[40vw]"
+            >
+              <div
+                class="node-bg h-[70vw] md:h-[26vw] w-full"
+                style="background-image: url('./netAsset/news4.jpg')"
+              ></div>
+              <p class="text-3xl md:text-xl weight-600 leading-[3rem] mt-10 p1">
+                支持触觉反馈，Manus VR推出全新Prime VR手套
+              </p>
+              <p class="mt-8 leading-[3rem] text-3xl md:text-sm p2">
+                第三届国际印刷工业发展论坛（Forum-PI
+                2013）于2013年5月13日在北京举行，主办方邀请了来自中国、美国、德国、英国、意大利、日本、澳大利亚、俄罗斯、印度、印尼、南非、巴西、
+              </p>
+            </div>
+            <div
+              class="basis-[calc(50vw-6.6vw)] md:basis-[calc(25vw-6.6vw)] h-[152vw] md:h-[40vw]"
+            >
+              <div
+                class="node-bg h-[70vw] md:h-[26vw] w-full"
+                style="background-image: url('./netAsset/news4.jpg')"
+              ></div>
+              <p class="text-3xl md:text-xl weight-600 leading-[3rem] mt-10 p1">
+                支持触觉反馈，Manus VR推出全新Prime VR手套
+              </p>
+              <p class="mt-8 leading-[3rem] text-3xl md:text-sm p2">
+                第三届国际印刷工业发展论坛（Forum-PI
+                2013）于2013年5月13日在北京举行，主办方邀请了来自中国、美国、德国、英国、意大利、日本、澳大利亚、俄罗斯、印度、印尼、南非、巴西、
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- 分页 -->
+        <div class="lk-pagination"></div>
+      </div>
+      <div
+        class="page-footer bg-[#FF350D] px-[8vw] pb-[8vw] md:pb-[2vw] pt-[2vw] text-[#ffffff]"
+      >
+        <div
+          class="flex flex-row flex-wrap md:flex-nowrap md:m-auto md:w-[80%] text-2xl md:text-[1rem]"
+        >
+          <p
+            class="basis-full mt-[4vw] md:mt-[1vw] leading-[2rem] md:text-center"
+          >
+            地址：中国山东省青岛市市南区某某中路20号
+          </p>
+          <p
+            class="basis-full mt-[4vw] md:mt-[1vw] leading-[2rem] md:text-center"
+          >
+            邮箱：1370XXX171@qq.com
+          </p>
+          <p
+            class="basis-full mt-[4vw] md:mt-[1vw] leading-[2rem] md:text-ce.nter"
+          >
+            电话：0591-88888888
+          </p>
+        </div>
+        <div
+          class="flex flex-row justify-center md:items-center mt-[6vw] md:mt-[2vw] text-2xl leading-[2rem] md:text-[1rem]"
+        >
+          <img
+            src="./asset/code.png"
+            class="w-[10vw] h-[10vw] md:w-[3.5rem] md:h-[3.5rem]"
+            alt=""
+          />
+          <div class="flex-1 md:flex-none py-[1rem] px-[1rem] md:py-0 md:px-2">
+            Copyright © 2009 - 2022 Cld , All Rights Reserved
+            某某网络科技有限公司 版权所有 陕ICP备xxxxxxx号
+          </div>
+        </div>
+      </div>
+      <!--mobile - 抽屉 -->
+      <div
+        id="drawer"
+        class="w-full h-full fixed top-0 right-[-100%] z-[100] flex flex-row"
+      >
+        <div class="h-full w-[35%]" id="drawer-inner-left"></div>
+        <div class="h-full flex-1 relative">
+          <img
+            src="./asset/close.png"
+            class="w-[2.4rem] aspect-square absolute top-10 right-10"
+            id="close-btn"
+            alt=""
+          />
+          <div
+            class="text-[2rem] flex flex-col h-full bg-[#212121] border-1 border-[#333333] px-[3rem] text-white overflow-hidden"
+          >
+            <a class="mt-[6rem]" href="./index.html">首页</a>
+            <p class="h-[0.125rem] bg-[#444444] mt-[6rem]"></p>
+            <a class="mt-[6rem]" href="./newsList.html">新闻列表页</a>
+            <p class="h-[0.125rem] bg-[#444444] mt-[6rem]"></p>
+            <a class="mt-[6rem]" href="./aboutUs.html">关于我们</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="./js/utils.js"></script>
+<script src="./js/net.js"></script>
+<script src="./js/api.js"></script>
+<script>
+  let pDom = document.getElementsByClassName("news-node")[0];
+
+  let params = {
+    page: 1,
+    pageSize: 8,
+  };
+  function clickToDeatil() {
+    let nodeArr = [].slice.call(document.getElementsByClassName("news-item"));
+    nodeArr.forEach((el) => {
+      el.addEventListener("click", () => {
+        let id = el.getAttribute("id");
+        window.open("./newsDetail#" + id);
+      });
+    });
+  }
+  getNewsList(params)
+    .then((result) => {
+      let list = result.data.list;
+      let innerHtml = "";
+      list.forEach((element) => {
+        innerHtml += `
+        <div  id="${element.id}"
+              class="basis-[calc(50vw-6.6vw)] news-item md:basis-[calc(25vw-6.6vw)] h-[152vw] md:h-[40vw]"
+            >
+              <div
+                class="node-bg h-[70vw] md:h-[26vw] w-full lazy-bg"
+                data-src="${element.imgUrl}"
+
+              ></div>
+              <p class="text-3xl md:text-xl weight-600 leading-[3rem] mt-10 p1">
+               ${element.title}
+              </p>
+              <p class="mt-8 leading-[3rem] text-3xl md:text-sm p2">
+               ${element.content}
+              </p>
+            </div>
+         `;
+      });
+      pDom.innerHTML = innerHtml;
+      setTimeout(() => {
+        imgLazyLoadFu();
+        clickToDeatil();
+      }, 500);
+    })
+    .catch((err) => {});
+</script>
+<script src="./js/index.js"></script>
+
+<style>
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  .element {
+    overflow: -moz-scrollbars-none;
+  }
+
+  .element {
+    -ms-overflow-style: none;
+  }
+
+  html {
+    font-family: "Microsoft YaHei";
+  }
+
+  .page-head {
+  }
+  /* navbar */
+  .head-navBar {
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s all;
+    opacity: 1;
+  }
+  /* .red-underline {
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s all;
+    position: relative;
+    left: calc(50% - 0.75rem);
+  } */
+  .narbar-item-active {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-color: red;
+    text-decoration-thickness: 2px;
+  }
+  .narbar-item:hover {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-color: red;
+    text-decoration-thickness: 2px;
+  }
+  #drawer {
+    transform: translateX(0);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s all;
+  }
+  /* .page-footer {
+    background: #FF350D;
+  } */
+
+  .team-node-bg {
+    background-size: 150%;
+    background-position: center;
+    transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+  }
+
+  .team-node-bg:hover,
+  .team-node-bg-mobile {
+    background-size: 100%;
+  }
+
+  .team-node-bg:hover .bg-mask {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  .team-node-bg:hover .toL {
+    transform: translateX(-1rem);
+  }
+
+  .bg-mask {
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s all;
+  }
+
+  .toL {
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s all;
+    transform: translateX(-3rem);
+  }
+
+  /* index-news */
+  .node-bg {
+    background-size: auto 100%;
+    background-position: center;
+  }
+
+  @media (max-width: 768px) {
+    .team-node-bg {
+      background-size: 100%;
+    }
+
+    .team-node-bg .toL {
+      transform: translateX(-1rem);
+    }
+
+    .team-node-bg .bg-mask {
+      background-color: rgba(0, 0, 0, 0);
+    }
+  }
+
+  @media (min-width: 768px) {
+    .node-bg {
+      background-size: auto 150%;
+      background-position: center;
+      transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+    }
+
+    .node-bg:hover {
+      background-size: auto 100%;
+    }
+
+    .news-node > div {
+      cursor: pointer;
+    }
+
+    .p1 {
+      animation: fadeInleft linear 0.5s;
+    }
+
+    .p2 {
+      animation: fadeIn linear 0.5s;
+    }
+  }
+</style>

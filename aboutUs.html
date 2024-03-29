@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html class="text-[8px] md:text-[12px] 2xl:text-[16px]">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>企业站-关于我们</title>
+    <link rel="stylesheet" href="style/index.css" />
+    <link rel="stylesheet" href="style/animate.css" />
+    <link rel="icon" sizes="any" mask="" href="./asset/catico.ico" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body>
+    <div class="pt-[8.25rem] md:pt-0 bg-white" id="app">
+      <div class="page-head">
+        <div
+          class="head-navBar h-[8.25rem] md:h-[5vw] w-full bg-[#000] flex flex-row fixed md:relative top-0 left-0 z-[99] items-center text-white"
+        >
+          <img
+            class="ml-[2rem] aspect-square w-[6vw] md:w-[3rem]"
+            src="./asset/logo.png"
+            alt=""
+          />
+          <a
+            class="pl-[1rem] text-3xl md:text-xl cursor-pointer"
+            href="./index.html"
+            >企业站</a
+          >
+          <span class="flex-1"></span>
+          <div class="hidden md:block w-[30%] mr-[5rem] relative">
+            <div class="w-full flex flex-row text-center text-base">
+              <a class="flex-1 narbar-item" href="./index.html">首页</a>
+              <a class="flex-1 narbar-item" href="./newsList.html">新闻列表</a>
+              <a
+                class="flex-1 narbar-item narbar-item-active"
+                href="./aboutUs.html"
+                >关于我们</a
+              >
+            </div>
+            <!-- <div>
+              <div class="red-underline bg-[red] w-[1.5rem] h-[2px]"></div>
+            </div> -->
+          </div>
+          <img
+            src="./asset/more.png"
+            class="md:hidden w-[2.4rem] aspect-square mr-[2rem]"
+            id="navbar-more"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="page-body">
+        <div class="body-about overflow-hidden pb-5">
+          <div class="title">
+            <div class="title-bg text-center mt-20">
+              <img
+                src="./asset/About_us.png"
+                class="w-[40%] md:m-auto pl-[6vw] md:pl-[13rem]"
+                alt=""
+              />
+            </div>
+            <div
+              class="title-content mt-[-2rem] mb-[1rem] flex flex-col items-center"
+            >
+              <p class="text-5xl">关于我们</p>
+              <span class="h-[0.5rem] w-[7.5rem] bg-[#FF350D] mt-[2rem]"></span>
+            </div>
+          </div>
+
+          <div
+            class="detail-container pt-5 flex flex-row flex-wrap md:flex-nowrap md:mx-[10rem] md:mt-20 md:mb-20"
+          >
+            <div
+              class="basis-[100%] h-[65vw] md:h-[16vw]"
+              id="map-container"
+            ></div>
+            <div class="basis-[100%] mx-[5vw] md:mx-[2vw]">
+              <p
+                class="article-title mt-[8vw] md:mt-0 text-[2rem] md:text-[1.5rem] font-[600] md:font-[400] leading-[3rem] md:leading-[1.75rem]"
+              >
+                一家专注系统高端定制开发的公司
+              </p>
+              <div
+                class="article-content mt-[5vw] md:mt-[1vw] mb-[5vw] md:mb-0 text-[1.75rem] md:text-[14px] leading-[3rem] md:leading-[28px] text-[#353535] md:mx-0"
+              >
+                <p>
+                  互联网指的是是网络与网络之间所串连成的庞大网络，这些网络以一组通用的协议相连，形成逻辑上的单一巨大国际网络。
+                </p>
+                <p>
+                  互联网始于1969年美国的阿帕网。这种将计算机网络互相联接在一起的方法可称作“网络互联”，在这基础上发展出覆盖全世界的全球性互联网络称互联网，即是互相连接一起的网络结构。
+                </p>
+                <p>
+                  我们出色的专业开发团队扎实的技术支持，优质高效的服务意识和丰厚的资源优势，提供专业的网站建设，微信小程序，APP开发，等技术服务。成果，专注于为客户提供专业有效的互联网系统解决方案。
+                </p>
+                <p class="flex flex-row mt-10 md:mt-5">
+                  <img
+                    src="./asset/info1.png"
+                    class="w-[2.5rem] h-[2.5rem] mr-[2rem] md:w-[1.2rem] md:h-[1.2rem] md:mr-[1rem]"
+                    alt=""
+                  />
+                  <span> 地址：中国山东省青岛市市南区某某中路20号</span>
+                </p>
+                <p class="flex flex-row mt-10 md:mt-3">
+                  <img
+                    src="./asset/info2.png"
+                    class="w-[2.5rem] h-[2.5rem] mr-[2rem] md:w-[1.2rem] md:h-[1.2rem] md:mr-[1rem]"
+                    alt=""
+                  />
+                  <span>邮箱：1370XXX171@qq.com</span>
+                </p>
+                <p class="flex flex-row mt-10 md:mt-3">
+                  <img
+                    src="./asset/info3.png"
+                    class="w-[2.5rem] h-[2.5rem] mr-[2rem] md:w-[1.2rem] md:h-[1.2rem] md:mr-[1rem]"
+                    alt=""
+                  />
+                  <span> 电话：0591-88888888</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="page-footer bg-[#FF350D] px-[8vw] pb-[8vw] md:pb-[2vw] pt-[2vw] text-[#ffffff]"
+      >
+        <div
+          class="flex flex-row flex-wrap md:flex-nowrap md:m-auto md:w-[80%] text-2xl md:text-[1rem]"
+        >
+          <p
+            class="basis-full mt-[4vw] md:mt-[1vw] leading-[2rem] md:text-center"
+          >
+            地址：中国山东省青岛市市南区某某中路20号
+          </p>
+          <p
+            class="basis-full mt-[4vw] md:mt-[1vw] leading-[2rem] md:text-center"
+          >
+            邮箱：1370XXX171@qq.com
+          </p>
+          <p
+            class="basis-full mt-[4vw] md:mt-[1vw] leading-[2rem] md:text-ce.nter"
+          >
+            电话：0591-88888888
+          </p>
+        </div>
+        <div
+          class="flex flex-row justify-center md:items-center mt-[6vw] md:mt-[2vw] text-2xl leading-[2rem] md:text-[1rem]"
+        >
+          <img
+            src="./asset/code.png"
+            class="w-[10vw] h-[10vw] md:w-[3.5rem] md:h-[3.5rem]"
+            alt=""
+          />
+          <div class="flex-1 md:flex-none py-[1rem] px-[1rem] md:py-0 md:px-2">
+            Copyright © 2009 - 2022 Cld , All Rights Reserved
+            某某网络科技有限公司 版权所有 陕ICP备xxxxxxx号
+          </div>
+        </div>
+      </div>
+      <!--mobile - 抽屉 -->
+      <div
+        id="drawer"
+        class="w-full h-full fixed top-0 right-[-100%] z-[100] flex flex-row"
+      >
+        <div class="h-full w-[35%]" id="drawer-inner-left"></div>
+        <div class="h-full flex-1 relative">
+          <img
+            src="./asset/close.png"
+            class="w-[2.4rem] aspect-square absolute top-10 right-10"
+            id="close-btn"
+            alt=""
+          />
+          <div
+            class="text-[2rem] flex flex-col h-full bg-[#212121] border-1 border-[#333333] px-[3rem] text-white overflow-hidden"
+          >
+            <a class="mt-[6rem]" href="./index.html">首页</a>
+            <p class="h-[0.125rem] bg-[#444444] mt-[6rem]"></p>
+            <a class="mt-[6rem]" href="./newsList.html">新闻列表页</a>
+            <p class="h-[0.125rem] bg-[#444444] mt-[6rem]"></p>
+            <a class="mt-[6rem]" href="./aboutUs.html">关于我们</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="./js/index.js"></script>
+<script type="text/javascript">
+  window._AMapSecurityConfig = {
+    securityJsCode: "56f1833588142f1f61acb5e9fd552708",
+  };
+</script>
+<script
+  type="text/javascript"
+  src="https://webapi.amap.com/maps?v=2.0&key=65dcb15f5fba0245477080398141dc2d"
+></script>
+<script src="./js/map.js"></script>
+<style>
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  .element {
+    overflow: -moz-scrollbars-none;
+  }
+
+  .element {
+    -ms-overflow-style: none;
+  }
+
+  html {
+    font-family: "Microsoft YaHei";
+  }
+
+  .page-head {
+  }
+  /* navbar */
+  .head-navBar {
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s all;
+    opacity: 1;
+  }
+  .red-underline {
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s all;
+    position: relative;
+    left: calc(16.6% - 0.75rem);
+  }
+  .narbar-item-active {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-color: red;
+    text-decoration-thickness: 2px;
+  }
+  .narbar-item:hover {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-color: red;
+    text-decoration-thickness: 2px;
+  }
+  #drawer {
+    transform: translateX(0);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s all;
+  }
+  /* .page-footer {
+    background: #FF350D;
+  } */
+
+  .team-node-bg {
+    background-size: 150%;
+    background-position: center;
+    transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+  }
+
+  .team-node-bg:hover,
+  .team-node-bg-mobile {
+    background-size: 100%;
+  }
+
+  .team-node-bg:hover .bg-mask {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  .team-node-bg:hover .toL {
+    transform: translateX(-1rem);
+  }
+
+  .bg-mask {
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s all;
+  }
+
+  .toL {
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s all;
+    transform: translateX(-3rem);
+  }
+
+  /* index-news */
+  .node-bg {
+    background-size: auto 100%;
+    background-position: center;
+  }
+
+  @media (max-width: 768px) {
+    .team-node-bg {
+      background-size: 100%;
+    }
+
+    .team-node-bg .toL {
+      transform: translateX(-1rem);
+    }
+
+    .team-node-bg .bg-mask {
+      background-color: rgba(0, 0, 0, 0);
+    }
+  }
+
+  @media (min-width: 768px) {
+    .node-bg {
+      background-size: auto 150%;
+      background-position: center;
+      transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+    }
+
+    .node-bg:hover {
+      background-size: auto 100%;
+    }
+
+    .news-node > div {
+      cursor: pointer;
+    }
+
+    .p1 {
+      animation: fadeInleft linear 0.5s;
+    }
+
+    .p2 {
+      animation: fadeIn linear 0.5s;
+    }
+  }
+</style>

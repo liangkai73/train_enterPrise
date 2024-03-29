@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html class="text-[8px] md:text-[12px] 2xl:text-[16px]" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="lf 企业站 电商 sass" />
+    <title>企业站</title>
+    <link rel="stylesheet" href="style/index.css" />
+    <link rel="stylesheet" href="style/animate.css" />
+    <link rel="stylesheet" href="style/swiper.css" />
+    <link rel="icon" sizes="any" mask="" href="./asset/catico.ico" />
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/axios/dist/axios.min.js"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body>
+    <div id="app">
+      <div class="page-head pt-[8.25rem] md:pt-0 bg-[#000]">
+        <div
+          class="head-navBar h-[8.25rem] md:h-[5vw] w-full bg-[#000] flex flex-row fixed md:relative top-0 left-0 z-[99] items-center text-white"
+        >
+          <img
+            class="ml-[2rem] aspect-square w-[6vw] md:w-[3rem]"
+            src="./asset/logo.png"
+            alt=""
+          />
+          <a
+            class="pl-[1rem] text-3xl md:text-xl cursor-pointer"
+            href="./index.html"
+            >企业站</a
+          >
+          <span class="flex-1"></span>
+          <div class="hidden md:block w-[30%] mr-[5rem] relative">
+            <div class="w-full flex flex-row text-center text-base">
+              <a
+                class="flex-1 narbar-item narbar-item-active"
+                href="./index.html"
+                >首页</a
+              >
+              <a class="flex-1 narbar-item" href="./newsList.html">新闻列表</a>
+              <a class="flex-1 narbar-item" href="./aboutUs.html">关于我们</a>
+            </div>
+            <!-- <div>
+              <div class="red-underline bg-[red] w-[1.5rem] h-[2px]"></div>
+            </div> -->
+          </div>
+          <img
+            src="./asset/more.png"
+            class="md:hidden w-[2.4rem] aspect-square mr-[2rem]"
+            id="navbar-more"
+            alt=""
+          />
+        </div>
+        <div
+          class="head-banner swiper-list h-[70vw] md:w-full md:h-[42vw] relative overflow-hidden m-auto text-white bg-[#000000]"
+        >
+          <!-- swiper1 -->
+          <div
+            class="swiper-item w-full h-full absolute opacity-0 top-0 left-0 z-10"
+          >
+            <div class="swiper-item-bg w-full h-full">
+              <img
+                class="aspect-[768/540] md:aspect-[1920/800] object-cover lazy-img"
+                data-src="./netAsset/banner1_960.jpg"
+                srcset="
+                  ./netAsset/banner1_960.jpg   960w,
+                  ./netAsset/banner1_1440.jpg 1440w,
+                  ./netAsset/banner1_1920.jpg 1920w
+                "
+                sizes="(max-width:768px) 768px,(max-width:1440px) 1440px,(max-width:1920) 1920px"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-full h-full flex flex-col items-center absolute z-10 absolute top-0 left-0"
+            >
+              <p
+                class="text-[6vw] mt-[35vw] md:text-[4.5vw] md:mt-[10vw] fadein-right-b"
+              >
+                开启互联网 + 从我们开始（b1）
+              </p>
+              <p class="text-[3vw] md:text-[2vw] mt-[1.5vw] fadein-right-b500">
+                域名主机，网站建设，云服务器，企业邮箱一站式解决
+              </p>
+            </div>
+          </div>
+          <!-- swiper2 -->
+          <div
+            class="swiper-item w-full h-full absolute top-0 left-0 opacity-0 z-10"
+          >
+            <div class="swiper-item-bg w-full h-full">
+              <img
+                class="aspect-[768/540] md:aspect-[1920/800] object-cover lazy-img"
+                data-src="./netAsset/banner1_960.jpg"
+                srcset="
+                  ./netAsset/banner1_960.jpg   960w,
+                  ./netAsset/banner1_1440.jpg 1440w,
+                  ./netAsset/banner1_1920.jpg 1920w
+                "
+                sizes="(max-width:768px) 768px,(max-width:1440px) 1440px,(max-width:1920) 1920px"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-full h-full flex flex-col items-center absolute z-10 absolute top-0 left-0"
+            >
+              <p
+                class="text-[6vw] mt-[35vw] md:text-[4.5vw] md:mt-[10vw] fadein-right-b"
+              >
+                开启互联网 + 从我们开始（b2）
+              </p>
+              <p class="text-[3vw] md:text-[2vw] mt-[1.5vw] fadein-right-b500">
+                域名主机，网站建设，云服务器，企业邮箱一站式解决
+              </p>
+            </div>
+          </div>
+          <!-- swiper3 -->
+          <div
+            class="swiper-item w-full h-full absolute top-0 left-0 opacity-0 z-10"
+          >
+            <div class="swiper-item-bg w-full h-full">
+              <img
+                class="aspect-[768/540] md:aspect-[1920/800] object-cover lazy-img"
+                data-src="./netAsset/banner1_960.jpg"
+                srcset="
+                  ./netAsset/banner1_960.jpg   960w,
+                  ./netAsset/banner1_1440.jpg 1440w,
+                  ./netAsset/banner1_1920.jpg 1920w
+                "
+                sizes="(max-width:768px) 768px,(max-width:1440px) 1440px,(max-width:1920) 1920px"
+                alt=""
+              />
+            </div>
+            <div
+              class="w-full h-full flex flex-col items-center absolute z-10 absolute top-0 left-0"
+            >
+              <p
+                class="text-[6vw] mt-[35vw] md:text-[4.5vw] md:mt-[10vw] fadein-right-b"
+              >
+                开启互联网 + 从我们开始（b13）
+              </p>
+              <p class="text-[3vw] md:text-[2vw] mt-[1.5vw] fadein-right-b500">
+                域名主机，网站建设，云服务器，企业邮箱一站式解决
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page-body">
+        <div class="body-serve mt-10">
+          <div class="serve-bg"></div>
+          <div class="serve-p1 flex flex-row flex-wrap md:flex-nowrap">
+            <div class="basis-[100%] md:basis-[50%]">
+              <div
+                class="h-[11rem] w-[70%] md:w-full pl-[3rem] pr-[3rem] flex flex-col justify-center"
+              >
+                <img src="./asset/service.png" alt="" />
+              </div>
+              <h3
+                class="md:pl-[11rem] pl-[6rem] text-5xl mt-[-4.5rem] md:mt-[-3.5rem] font-normal"
+              >
+                服务范围
+              </h3>
+              <div
+                class="md:pl-[11rem] pl-[3rem] pr-[3rem] mt-8 md:mt-10 text-[#8B8B8B] text-[1.75rem] leading-[3rem]"
+              >
+                <p>
+                  依托百度政务混合云，汇聚城市管理及公安等政务领域的自有数据及互联网公开数据，基于百度大数据多年积累的行业模型及实战经验，提供从数据整合治理到分析挖掘的一站式大数据解决方案，助力智慧政务新时代。
+                </p>
+                <p class="mt-10">
+                  全渠道零售方案包括B2C、O2O、B2B的场景，提供APP/小程序，支持对接饿了么、美团等第三方外卖平台，基于阿里巴巴多年沉淀的业务中台技术，建立商品、会员、交易、营销等共享服务中心，实现全渠道数据的共享和一致，帮助零售商打造线上、线下无差别的全渠道销售能力。
+                </p>
+              </div>
+            </div>
+            <div
+              class="basis-[100%] mt-10 md:basis-[50%] pl-[8rem] md:pl-0 flex flex-row gap-6 items-end"
+            >
+              <div class="basis-[12rem] md:basis-[28%]">
+                <img
+                  class="aspect-square object-cover lazy-img"
+                  data-src="./netAsset/p1-1.jpeg"
+                  alt=""
+                />
+              </div>
+              <div class="flex-1">
+                <img
+                  class="aspect-[7/6] object-cover lazy-img"
+                  data-src="./netAsset/p1-2.jpeg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div class="serve-p2 mt-[1.5rem] flex flex-row items-start">
+            <div class="md:flex-1"></div>
+            <div class="flex-1 md:flex-[0] md:basis-[35%] mr-[1.5rem]">
+              <img
+                class="aspect-[658/484] object-cover lazy-img"
+                data-src="./netAsset/p2-1.jpeg"
+                alt=""
+              />
+            </div>
+            <div class="basis-[40%] md:basis-[25%]">
+              <img
+                class="aspect-[46/30] object-cover lazy-img"
+                data-src="./netAsset/p2-2.jpeg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <!-- 企业文化 -->
+        <div
+          class="body-culture mt-[8rem] text-[#ffffff] py-[5.5rem] px-[5rem] md:px-[10rem] bg-fixed bg-cover relative lazy-bg"
+          data-src="./netAsset/p3-bg.jpeg"
+        >
+          <div
+            class="h-full w-full absolute top-0 left-0 bg-[rgba(0,0,0,0.7)] z-1"
+          ></div>
+          <div class="flex flex-col items-center z-10 relative">
+            <h3 class="text-5xl font-normal">企业文化</h3>
+            <span class="h-[0.5rem] w-[7.5rem] bg-[#FF350D] mt-[2rem]"></span>
+          </div>
+          <div class="mt-[2.5rem] text-2xl leading-[3rem] z-10 relative">
+            <p>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;作为中国专业的企业文化咨询公司，我们在生存和发展的历程中，也形成了自己经营管理个性和文化，我们的运营和发展都基于对这些文化涵盖的信念、信条和原则持之以恒、不折不扣地执行，所有公司的成员的所有行为均需与这些标准和原则保持高度统一。
+            </p>
+            <p>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我们相信，企业的战略可以改变，领导可以更换，甚至文化的表现也要与时俱进，总之一切都可以调整，唯一能保持并引领我们的，只有我们的文化核心。只有信念的坚持才能带来企业的持续增长，只有统一的意志才能锻炼出优秀的队伍，总之只有文化才能使我们长青。
+            </p>
+          </div>
+        </div>
+        <!-- 团队介绍 -->
+        <div class="body-team">
+          <div class="title bg-[#ffffff]">
+            <div class="title-bg text-center mt-20">
+              <img
+                src="./asset/titleTeam.png"
+                class="w-[60%] m-auto pl-[13rem]"
+                alt=""
+              />
+            </div>
+            <div
+              class="title-content mt-[-2rem] mb-[3rem] flex flex-col items-center"
+            >
+              <p class="text-5xl">团队介绍</p>
+              <span class="h-[0.5rem] w-[7.5rem] bg-[#FF350D] mt-[2rem]"></span>
+            </div>
+          </div>
+          <div
+            class="team-node flex flex-row text-white flex-wrap md:flex-nowrap"
+          >
+            <div
+              class="basis-[100%] h-[137vw] md:h-[47vw] text-center team-node-bg relative lazy-bg"
+              data-src="./netAsset/man1.jpeg"
+            >
+              <div class="h-full w-full relative z-10 overflow-hidden">
+                <p class="text-[4rem] md:text-[3rem] mt-[92%] fadein-left">
+                  Jon Smith
+                </p>
+                <p class="mt-[2%] text-[2rem] md:text-xl fadein">
+                  特级教师,从事教育工作10年
+                </p>
+                <p
+                  class="mt-[8%] text-3xl md:text-xl fadein flex flex-row justify-center"
+                >
+                  <img src="./asset/toL.png" class="w-[1.5rem] toL" alt="" />
+                  <span class="hover:cursor-pointer hover:underline"
+                    >More information</span
+                  >
+                </p>
+              </div>
+              <div
+                class="h-full w-full absolute top-0 left-0 bg-[rgba(0,0,0,0.3)] z-[1] bg-mask"
+              ></div>
+            </div>
+            <!-- p2 -->
+            <div
+              class="basis-[100%] h-[137vw] md:h-[47vw] text-center team-node-bg relative lazy-bg"
+              data-src="./netAsset/man2.jpeg"
+            >
+              <div class="h-full w-full relative z-10 overflow-hidden">
+                <p class="text-[4rem] md:text-[3rem] mt-[92%] fadein-left">
+                  Merri Bond
+                </p>
+                <p class="mt-[2%] text-[2rem] md:text-xl fadein">
+                  特级教师,从事教育工作10年
+                </p>
+                <p
+                  class="mt-[8%] text-3xl md:text-xl fadein flex flex-row justify-center"
+                >
+                  <img src="./asset/toL.png" class="w-[1.5rem] toL" alt="" />
+                  <span class="hover:cursor-pointer hover:underline"
+                    >More information</span
+                  >
+                </p>
+              </div>
+              <div
+                class="h-full w-full absolute top-0 left-0 bg-[rgba(0,0,0,0.3)] z-[1] bg-mask"
+              ></div>
+            </div>
+            <!-- p3 -->
+            <div
+              class="basis-[100%] h-[137vw] md:h-[47vw] text-center team-node-bg relative lazy-bg"
+              data-src="./netAsset/man3.jpeg"
+            >
+              <div class="h-full w-full relative z-10 overflow-hidden">
+                <p class="text-[4rem] md:text-[3rem] mt-[92%] fadein-left">
+                  Samuel Fredman
+                </p>
+                <p class="mt-[2%] text-[2rem] md:text-xl fadein">
+                  特级教师,从事教育工作10年
+                </p>
+                <p
+                  class="mt-[8%] text-3xl md:text-xl fadein flex flex-row justify-center"
+                >
+                  <img src="./asset/toL.png" class="w-[1.5rem] toL" alt="" />
+                  <span class="hover:cursor-pointer hover:underline"
+                    >More information</span
+                  >
+                </p>
+              </div>
+              <div
+                class="h-full w-full absolute top-0 left-0 bg-[rgba(0,0,0,0.3)] z-[1] bg-mask"
+              ></div>
+            </div>
+          </div>
+        </div>
+        <!-- 新闻动态 -->
+        <div class="body-news bg-[#212121] overflow-hidden text-white pb-5">
+          <div class="title">
+            <div class="title-bg text-center mt-20">
+              <img
+                src="./asset/news.png"
+                class="w-[60%] m-auto pl-[13rem]"
+                alt=""
+              />
+            </div>
+            <div
+              class="title-content mt-[-2rem] mb-[1rem] flex flex-col items-center"
+            >
+              <p class="text-5xl">新闻动态</p>
+              <span class="h-[0.5rem] w-[7.5rem] bg-[#FF350D] mt-[2rem]"></span>
+            </div>
+          </div>
+          <div
+            class="news-node flex flex-row text-white flex-wrap w-full md:flex-nowrap justify-between p-[4.4vw] md:px-[6vw] md:py-[2vw] md:gap-[3vw]"
+          >
+            <div
+              class="basis-[calc(50vw-6.6vw)] news-item md:basis-0 md:flex-1 h-[152vw] md:h-[40vw]"
+            >
+              <div
+                class="node-bg h-[70vw] md:h-[26vw] w-full lazy-bg"
+                data-src="./netAsset/news1.png"
+              ></div>
+              <p class="text-3xl md:text-xl weight-600 leading-[3rem] mt-10 p1">
+                2022百度AI大会前夕，解读百度大脑的半年“豹变”
+              </p>
+              <p class="mt-8 leading-[3rem] text-3xl md:text-sm p2">
+                Facebook为未来的VR社交打造了一款逼真的虚拟头像系统，该系统的特点是，利用数百颗摄像头对人脸进行动作捕捉，并能生成与人脸相似度很高的虚拟头像，这些头像还能模仿人脸的大量表情。
+              </p>
+            </div>
+
+            <div
+              class="basis-[calc(50vw-6.6vw)] md:basis-0 md:flex-1 h-[152vw] md:h-[40vw]"
+            >
+              <div
+                class="node-bg h-[70vw] md:h-[26vw] w-full lazy-bg"
+                data-src="./netAsset/news2.jpg"
+              ></div>
+              <p class="text-3xl md:text-xl weight-600 leading-[3rem] mt-10 p1">
+                创投早报｜美国商业化核聚变创企获投；音乐版权公司完成融资
+              </p>
+              <p class="mt-8 leading-[3rem] text-3xl md:text-sm p2">
+                举办第六届中华印制大奖颁奖典礼、亚洲印刷展览联盟会议、国家主题日等多场专业、先进、丰富的同期活动，全面把握产业趋势与动态，共同探讨印刷业现状和未来。
+              </p>
+            </div>
+            <div
+              class="basis-[calc(50vw-6.6vw)] md:basis-0 md:flex-1 h-[152vw] md:h-[40vw]"
+            >
+              <div
+                class="node-bg h-[70vw] md:h-[26vw] w-full lazy-bg"
+                data-src="./netAsset/news3.jpg"
+              ></div>
+              <p class="text-3xl md:text-xl weight-600 leading-[3rem] mt-10 p1">
+                【千龙网】广告行业标准指导性意见将出台
+              </p>
+              <p class="mt-8 leading-[3rem] text-3xl md:text-sm p2">
+                国际印刷工业发展论坛由中国印刷及设备器材工业协会主办，始创于2005年，四年一届，已成功举办三届，每届论坛选择5-6个发达国家和5-6个发展中国家印刷协会的主席或总裁发表演讲
+              </p>
+            </div>
+
+            <div
+              class="basis-[calc(50vw-6.6vw)] md:basis-0 md:flex-1 h-[152vw] md:h-[40vw]"
+            >
+              <div
+                class="node-bg h-[70vw] md:h-[26vw] w-full lazy-bg"
+                data-src="./netAsset/news4.jpg"
+              ></div>
+              <p class="text-3xl md:text-xl weight-600 leading-[3rem] mt-10 p1">
+                支持触觉反馈，Manus VR推出全新Prime VR手套
+              </p>
+              <p class="mt-8 leading-[3rem] text-3xl md:text-sm p2">
+                第三届国际印刷工业发展论坛（Forum-PI
+                2013）于2013年5月13日在北京举行，主办方邀请了来自中国、美国、德国、英国、意大利、日本、澳大利亚、俄罗斯、印度、印尼、南非、巴西、
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="page-footer bg-[#FF350D] px-[8vw] pb-[8vw] md:pb-[2vw] pt-[2vw] text-[#ffffff]"
+      >
+        <div
+          class="flex flex-row flex-wrap md:flex-nowrap md:m-auto md:w-[80%] text-2xl md:text-[1rem]"
+        >
+          <p
+            class="basis-full mt-[4vw] md:mt-[1vw] leading-[2rem] md:text-center"
+          >
+            地址：中国山东省青岛市市南区某某中路20号
+          </p>
+          <p
+            class="basis-full mt-[4vw] md:mt-[1vw] leading-[2rem] md:text-center"
+          >
+            邮箱：1370XXX171@qq.com
+          </p>
+          <p
+            class="basis-full mt-[4vw] md:mt-[1vw] leading-[2rem] md:text-ce.nter"
+          >
+            电话：0591-88888888
+          </p>
+        </div>
+        <div
+          class="flex flex-row justify-center md:items-center mt-[6vw] md:mt-[2vw] text-2xl leading-[2rem] md:text-[1rem]"
+        >
+          <img
+            src="./asset/code.png"
+            class="w-[10vw] h-[10vw] md:w-[3.5rem] md:h-[3.5rem]"
+            alt=""
+          />
+          <div class="flex-1 md:flex-none py-[1rem] px-[1rem] md:py-0 md:px-2">
+            Copyright © 2009 - 2022 Cld , All Rights Reserved
+            某某网络科技有限公司 版权所有 陕ICP备xxxxxxx号
+          </div>
+        </div>
+      </div>
+      <!--mobile - 抽屉 -->
+      <div
+        id="drawer"
+        class="w-full h-full fixed top-0 right-[-100%] z-[100] flex flex-row"
+      >
+        <div class="h-full w-[35%]" id="drawer-inner-left"></div>
+        <div class="h-full flex-1 relative">
+          <img
+            src="./asset/close.png"
+            class="w-[2.4rem] aspect-square absolute top-10 right-10"
+            id="close-btn"
+            alt=""
+          />
+          <div
+            class="text-[2rem] flex flex-col h-full bg-[#212121] border-1 border-[#333333] px-[3rem] text-white overflow-hidden"
+          >
+            <a class="mt-[6rem]" href="./index.html">首页</a>
+            <p class="h-[0.125rem] bg-[#444444] mt-[6rem]"></p>
+            <a class="mt-[6rem]" href="./newsList.html">新闻列表页</a>
+            <p class="h-[0.125rem] bg-[#444444] mt-[6rem]"></p>
+            <a class="mt-[6rem]" href="./aboutUs.html">关于我们</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="./js/utils.js"></script>
+<script src="./js/net.js"></script>
+<script src="./js/api.js"></script>
+<script>
+  let pDom = document.getElementsByClassName("news-node")[0];
+  getNewsNode()
+    .then((result) => {
+      let innerHtml = "";
+      result.forEach((element) => {
+        innerHtml += `
+         <div id=${element.id}
+              class="basis-[calc(50vw-6.6vw)] news-item md:basis-0 md:flex-1 h-[152vw] md:h-[40vw]"
+            >
+              <div
+                class="node-bg h-[70vw] md:h-[26vw] w-full lazy-bg"
+                data-src="${element.imgUrl}"
+              ></div>
+              <p class="text-3xl md:text-xl weight-600 leading-[3rem] mt-10 p1">
+                ${element.title}
+              </p>
+              <p class="mt-8 leading-[3rem] text-3xl md:text-sm p2">
+               ${element.content}
+              </p>
+            </div>
+         `;
+      });
+      pDom.innerHTML = innerHtml;
+      // setTimeout(() => {
+      //   imgLazyLoadFu();
+      // }, 500);
+    })
+    .catch((err) => {});
+</script>
+<script src="./js/index.js"></script>
+<script src="./js/swiper.js"></script>
+
+<style>
+  .page-head {
+  }
+  /* navbar */
+  .head-navBar {
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s all;
+    opacity: 1;
+  }
+  /* .red-underline {
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s all;
+    position: relative;
+    left: calc(16.6% - 0.75rem);
+  } */
+  .narbar-item {
+    transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .narbar-item-active {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-color: red;
+    text-decoration-thickness: 2px;
+  }
+  .narbar-item:hover {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-color: red;
+    text-decoration-thickness: 2px;
+  }
+  #drawer {
+    transform: translateX(0);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s all;
+  }
+  /* .page-footer {
+    background: #FF350D;
+  } */
+  .swiper-item {
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s all;
+  }
+  .swiper-contral {
+    position: absolute;
+    left: 2vw;
+    top: 15vw;
+    display: flex;
+    flex-direction: column;
+    z-index: 20;
+  }
+  .swiper-contral-item {
+    margin-top: 0.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 1px solid #aaa;
+    border-radius: 50%;
+  }
+  .team-node-bg {
+    background-size: 150%;
+    background-position: center;
+    transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+  }
+
+  .team-node-bg:hover,
+  .team-node-bg-mobile {
+    background-size: 100%;
+  }
+
+  .team-node-bg:hover .bg-mask {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  .team-node-bg:hover .toL {
+    transform: translateX(-1rem);
+  }
+
+  .bg-mask {
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s all;
+  }
+
+  .toL {
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s all;
+    transform: translateX(-3rem);
+  }
+
+  /* index-news */
+  .node-bg {
+    background-size: auto 100%;
+    background-position: center;
+  }
+
+  @media (max-width: 768px) {
+    .team-node-bg {
+      background-size: 100%;
+    }
+
+    .team-node-bg .toL {
+      transform: translateX(-1rem);
+    }
+
+    .team-node-bg .bg-mask {
+      background-color: rgba(0, 0, 0, 0);
+    }
+  }
+
+  @media (min-width: 768px) {
+    .node-bg {
+      background-size: auto 150%;
+      background-position: center;
+      transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+    }
+
+    .node-bg:hover {
+      background-size: auto 100%;
+    }
+
+    .news-node > div {
+      cursor: pointer;
+    }
+
+    .p1 {
+      animation: fadeInleft linear 0.5s;
+    }
+
+    .p2 {
+      animation: fadeIn linear 0.5s;
+    }
+  }
+</style>
