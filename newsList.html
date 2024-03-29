@@ -76,7 +76,8 @@
             class="news-node flex flex-row flex-wrap w-full p-[4.4vw] md:px-[6vw] md:py-[2vw] md:gap-[3vw] justify-between"
           >
             <div
-              class="basis-[calc(50vw-6.6vw)] md:basis-[calc(25vw-6.6vw)] h-[152vw] md:h-[40vw]"
+              id="1"
+              class="news-item basis-[calc(50vw-6.6vw)] md:basis-[calc(25vw-6.6vw)] h-[152vw] md:h-[40vw]"
             >
               <div
                 class="node-bg h-[70vw] md:h-[26vw] w-full"
@@ -91,7 +92,8 @@
             </div>
 
             <div
-              class="basis-[calc(50vw-6.6vw)] md:basis-[calc(25vw-6.6vw)] h-[152vw] md:h-[40vw]"
+              id="2"
+              class="news-item basis-[calc(50vw-6.6vw)] md:basis-[calc(25vw-6.6vw)] h-[152vw] md:h-[40vw]"
             >
               <div
                 class="node-bg h-[70vw] md:h-[26vw] w-full"
@@ -105,7 +107,8 @@
               </p>
             </div>
             <div
-              class="basis-[calc(50vw-6.6vw)] md:basis-[calc(25vw-6.6vw)] h-[152vw] md:h-[40vw]"
+              id="3"
+              class="news-item basis-[calc(50vw-6.6vw)] md:basis-[calc(25vw-6.6vw)] h-[152vw] md:h-[40vw]"
             >
               <div
                 class="node-bg h-[70vw] md:h-[26vw] w-full"
@@ -120,7 +123,8 @@
             </div>
 
             <div
-              class="basis-[calc(50vw-6.6vw)] md:basis-[calc(25vw-6.6vw)] h-[152vw] md:h-[40vw]"
+              id="4"
+              class="news-item basis-[calc(50vw-6.6vw)] md:basis-[calc(25vw-6.6vw)] h-[152vw] md:h-[40vw]"
             >
               <div
                 class="node-bg h-[70vw] md:h-[26vw] w-full"
@@ -135,7 +139,8 @@
               </p>
             </div>
             <div
-              class="basis-[calc(50vw-6.6vw)] md:basis-[calc(25vw-6.6vw)] h-[152vw] md:h-[40vw]"
+              id="5"
+              class="news-item basis-[calc(50vw-6.6vw)] md:basis-[calc(25vw-6.6vw)] h-[152vw] md:h-[40vw]"
             >
               <div
                 class="node-bg h-[70vw] md:h-[26vw] w-full"
@@ -227,6 +232,7 @@
     page: 1,
     pageSize: 8,
   };
+  clickToDeatil();
   function clickToDeatil() {
     let nodeArr = [].slice.call(document.getElementsByClassName("news-item"));
     nodeArr.forEach((el) => {

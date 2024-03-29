@@ -1,6 +1,20 @@
 "use strict";
 
 window.onload = function () {
+    document.getElementById('navbar-more').addEventListener('click', () => {
+        _drawerSwitch(true);
+    })
+    document.getElementById('close-btn').addEventListener('click', () => {
+        _drawerSwitch(false);
+    })
+    document.getElementById('drawer-inner-left').addEventListener('click', () => {
+        _drawerSwitch(false);
+    })
+    // 抽屉开关
+    function _drawerSwitch(isShow) {
+        isShow && (document.getElementById('drawer').style.transform = `translateX(-100%)`);
+        !isShow && (document.getElementById('drawer').style.transform = `translateX(0)`);
+    }
     // 移动端init
     isMobile() && mobileMenueInit()
     imgLazyLoadFu();
@@ -28,27 +42,15 @@ function pcInit() {
 //  移动端menue初始化
 function mobileMenueInit() {
 
-    document.getElementById('navbar-more').addEventListener('click', () => {
-        _drawerSwitch(true);
-    })
-    document.getElementById('close-btn').addEventListener('click', () => {
-        _drawerSwitch(false);
-    })
-    document.getElementById('drawer-inner-left').addEventListener('click', () => {
-        _drawerSwitch(false);
-    })
 
-    window.addEventListener('scroll', scollEvent);
-
-    document.body.setAttribute('page-init', 'mobile');
-
-
-    // 抽屉开关
-    function _drawerSwitch(isShow) {
-        isShow && (document.getElementById('drawer').style.transform = `translateX(-100%)`);
-        !isShow && (document.getElementById('drawer').style.transform = `translateX(0)`);
-    }
 }
+
+window.addEventListener('scroll', scollEvent);
+
+document.body.setAttribute('page-init', 'mobile');
+
+
+
 
 // mobile - scoll事件
 let timer;
