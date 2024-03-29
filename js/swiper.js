@@ -86,8 +86,12 @@ class swiperInstance {
         div.classList.add('swiper-contral');
         this.itemArr.forEach((item, index) => {
             let node = document.createElement('div');
-            node.classList.add('swiper-contral-item');
+            node.classList.add('swiper-contral-item', 'cursor-pointer');
             node.setAttribute('node_id', index);
+            node.addEventListener('click', (e) => {
+                let index = e.target.getAttribute('node_id')
+                this.jumpTopage(index)
+            })
             div.append(node);
         })
         this.itemArr[0].parentNode.append(div);
